@@ -22,7 +22,7 @@ file_to_folder_hash = {
     "images": pictures_folder,
     "Documents": documents_folder,
     "Video": video_folder,
-    "Audio": video_folder,
+    "Audio": music_folder,
     # "Others": misc_folder,
 }
 

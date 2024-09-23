@@ -19,7 +19,7 @@ A Python script that automatically organizes files from your desktop into catego
   - [Usage](#usage)
   - [Logs](#logs)
   - [Configuration](#configuration)
-    - [Example `config.json`:](#example-configjson)
+    - [Example `config.py`:](#example-configpy)
     - [How to Customize:](#how-to-customize)
   - [Batch Files](#batch-files)
   - [Contributing](#contributing)
@@ -64,18 +64,16 @@ There will be a log file for each day 5 days back in time.
 
 ## Configuration
 
-You can customize the sorting behavior by modifying the `config.json` file located in the project `utils` directory. This file allows you to add or edit which file types should be sorted and where they should be moved.
+You can customize the sorting behavior by modifying the `config.py` file located in the project `utils` directory. This file allows you to add or edit which file types should be sorted and where they should be moved.
 
-### Example `config.json`:
+### Example `config.py`:
 
-```json
-{
-  "folders": {
-    "Images": [".png", ".jpg", ".jpeg", ".gif"],
-    "Documents": [".pdf", ".docx", ".txt"],
-    "Videos": [".mp4", ".mov"],
-    "Archives": [".zip", ".rar", ".tar"]
-  }
+```python
+file_types = {
+    "images": ['.jpeg', '.png', '.jpg', '.svg', '.tif', '.webp'],
+    "Documents": ['.doc', '.docx', '.txt', '.pdf', '.xlsx', '.pptx'],
+    "Video": ['.avi', '.mp4', '.mov', '.mkv'],
+    "Audio": ['.mp3', '.ogg', '.wav', '.amr'],
 }
 ```
 
